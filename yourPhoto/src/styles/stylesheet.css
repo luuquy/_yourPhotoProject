@@ -99,3 +99,8 @@ button {
 button:hover {
   border-color: blue;
 }
+
+h1 a {
+  color: #065784;
+  text-decoration: none;
+}

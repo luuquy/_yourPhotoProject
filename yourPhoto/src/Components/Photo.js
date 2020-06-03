@@ -1,6 +1,7 @@
 import React from "react";
 
 function Photo(props) {
+  console.log(props.posts);
   const post = props.post;
   return (
     <figure className="figure">
@@ -12,7 +13,7 @@ function Photo(props) {
         <button
           className="remove-button"
           onClick={() => {
-            props.onRemovePhoto(post);
+            props.removePost(props.index);
           }}
         >
           Remove

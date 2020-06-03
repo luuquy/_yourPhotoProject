@@ -6,11 +6,7 @@ import { Link } from "react-router-dom";
 function PhotoWall(props) {
   return (
     <div>
-      <Link
-        className="addIcon"
-        onClick={props.onNavigate}
-        to="/AddPhoto"
-      ></Link>
+      <Link className="addIcon" to="/AddPhoto"></Link>
 
       <div className="photoGrid">
         {props.posts
@@ -18,11 +14,7 @@ function PhotoWall(props) {
             return y.id - x.id;
           })
           .map((post, index) => (
-            <Photo
-              key={index}
-              post={post}
-              onRemovePhoto={props.onRemovePhoto}
-            />
+            <Photo key={index} post={post} {...props} index={index} />
           ))}
       </div>
     </div>
@@ -31,7 +23,7 @@ function PhotoWall(props) {
 
 PhotoWall.prototype = {
   posts: PropTypes.array.isRequired,
-  onRemovePhoto: PropTypes.func.isRequired,
+  // onRemovePhoto: PropTypes.func.isRequired,
 };
 
 export default PhotoWall;
