@@ -2,16 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import { createStore } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import App from "./Components/App";
 import rootReducer from "./redux/reducer";
 import "./styles/stylesheet.css";
-import Main from "./Components/Main";
+import thunk from "redux-thunk";
+import { database } from "./database/config";
 
-const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancer(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
