@@ -1,4 +1,4 @@
-.photo {
+.photoGrid .photo {
   object-fit: content;
   height: 300px;
   width: calc(100% + 4rem);
@@ -6,11 +6,13 @@
 }
 
 .figure {
-  flex-basis: calc(33.333% - 4rem);
+  --width: calc(33.33333% - 4rem);
+  flex-basis: var(--width);
   border: 1px solid #d3d3d3;
   padding: 2rem;
   flex-grow: 1;
   margin: 0 2rem 2rem 2rem;
+  max-width: var(--width);
 }
 .button-container-remove {
   cursor: pointer;

@@ -14,6 +14,7 @@
   display: flex;
   background: #fff;
   border: black;
+  display: flex;
 }
 .single-photo .figure {
   box-shadow: none;
@@ -22,10 +23,12 @@
   padding: 0;
   flex: 1 0 60%;
   max-width: 60%;
+  flex: 2;
 }
 .single-photo .comments {
   flex: 1 0 40%;
   max-width: 40%;
+  flex: 1;
 }
 .single-photo .photo {
   width: 100%;

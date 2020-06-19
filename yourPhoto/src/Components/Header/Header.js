@@ -4,11 +4,11 @@ import "./Header.css";
 
 function Header(props) {
   return (
-    <div className="header">
+    <div className="header ">
       <div className="row">
         <div className="col ">
           <nav className="header__nav">
-            <ul className="header__nav-list">
+            <ul className="header__nav-list ">
               <li>
                 <Link className="header__nav-list-item homeitem" to="/">
                   Home

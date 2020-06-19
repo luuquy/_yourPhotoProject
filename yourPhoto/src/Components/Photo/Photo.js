@@ -9,7 +9,7 @@ function Photo(props) {
     <figure className="figure">
       <Link to={`/single/${post.id}`}>
         {" "}
-        <img className="photo" src={post.imageLink} alt={post.description} />
+        <img className="photo   " src={post.imageLink} alt={post.description} />
       </Link>
       <figcaption>
         {" "}

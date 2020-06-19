@@ -1,5 +1,6 @@
 .comment {
   width: 100%;
+  max-width: 200px;
 }
 
 .comment-form input,
@@ -16,6 +17,8 @@
 }
 
 .comment p {
-  border: 1px solid gray;
+  max-width: 200px;
+  border-bottom: 1px solid gray;
   padding: 0.5rem 6px;
+  white-space: inherit;
 }

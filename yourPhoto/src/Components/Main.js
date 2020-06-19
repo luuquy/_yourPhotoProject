@@ -5,6 +5,7 @@ import { Route, Link } from "react-router-dom";
 import Single from "./Single/Single";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import ReactWOW from "react-wow";
 
 class Main extends Component {
   state = { loading: true };
