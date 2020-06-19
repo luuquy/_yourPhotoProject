@@ -19,7 +19,9 @@
   color: rgb(250, 11, 238);
   font-family: "Rock Salt", cursive;
 }
-
+.homeitem {
+  margin-right: 6rem;
+}
 .header__brand:hover {
   text-decoration: none;
   color: rgb(9, 223, 212);
@@ -32,7 +34,6 @@
   line-height: var(--height);
 }
 .header__nav-list-item {
-  margin-right: 2rem;
   color: rgb(9, 223, 212);
   font-family: "Segoe ui light";
 }

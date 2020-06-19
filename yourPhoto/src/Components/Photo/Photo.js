@@ -13,7 +13,10 @@ function Photo(props) {
       </Link>
       <figcaption>
         {" "}
-        <p> {post.description} </p>{" "}
+        <p className="status">
+          {" "}
+          <span> Status: </span> "{post.description}"{" "}
+        </p>{" "}
       </figcaption>
       <div className="button-container">
         <button

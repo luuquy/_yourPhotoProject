@@ -1,17 +1,21 @@
 .comment {
   width: 100%;
 }
-.comment p {
-  border-bottom: 1px solid #d3d3d3;
-  padding: 0.5rem 0;
-}
+
 .comment-form input,
 .comment-form textarea {
   width: 100%;
-  border: 0;
   font-size: 1.3rem;
-  padding: 1rem 0;
+  padding: 1rem 0.3rem;
   border-bottom: 1px solid #d3d3d3;
-  outline: none;
   resize: vertical;
+}
+
+.comment-form input {
+  border-color: rgb(9, 223, 212);
+}
+
+.comment p {
+  border: 1px solid gray;
+  padding: 0.5rem 6px;
 }

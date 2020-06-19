@@ -6,11 +6,11 @@ function Header(props) {
   return (
     <div className="header">
       <div className="row">
-        <div className="col text-center">
+        <div className="col ">
           <nav className="header__nav">
             <ul className="header__nav-list">
               <li>
-                <Link className="header__nav-list-item" to="/">
+                <Link className="header__nav-list-item homeitem" to="/">
                   Home
                 </Link>
               </li>
