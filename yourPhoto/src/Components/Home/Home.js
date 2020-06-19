@@ -1,13 +1,11 @@
 import React from "react";
-import Photo from "./Photo";
+import Photo from "../Photo/Photo";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function PhotoWall(props) {
+function Home(props) {
   return (
     <div>
-      <Link className="addIcon" to="/AddPhoto"></Link>
-
       <div className="photoGrid">
         {props.posts
           .sort(function (x, y) {
@@ -21,9 +19,9 @@ function PhotoWall(props) {
   );
 }
 
-PhotoWall.prototype = {
+Home.prototype = {
   posts: PropTypes.array.isRequired,
   // onRemovePhoto: PropTypes.func.isRequired,
 };
 
-export default PhotoWall;
+export default Home;

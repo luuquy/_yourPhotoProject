@@ -1,0 +1,26 @@
+.form {
+  background: white;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  margin: 0 0 15px;
+}
+
+.form button:hover {
+  background-color: rgb(250, 11, 238);
+}
+
+button:hover {
+  border-color: rgb(250, 11, 238);
+}

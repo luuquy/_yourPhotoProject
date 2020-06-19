@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import PhotoWall from "./PhotoWall";
-import AddPhoto from "./AddPhoto";
+import Home from "./Home/Home";
+import AddPhoto from "./AddPhoto/AddPhoto";
 import { Route, Link } from "react-router-dom";
-import Single from "./Single";
+import Single from "./Single/Single";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+
 class Main extends Component {
   state = { loading: true };
   componentDidMount() {
@@ -13,32 +16,37 @@ class Main extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>
-          <Link to="/"> Photowall </Link>
-        </h1>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <div>
-              <PhotoWall {...this.props} />
-            </div>
-          )}
-        />
-        <Route
-          path="/AddPhoto"
-          render={({ history }) => (
-            <AddPhoto {...this.props} onHistory={history} />
-          )}
-        />
-        <Route
-          exact
-          path="/single/:id"
-          render={(params) => (
-            <Single loading={this.state.loading} {...this.props} {...params} />
-          )}
-        />
+      <div className="app">
+        <Header></Header>
+        <div className="container">
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <div>
+                <Home {...this.props} />
+              </div>
+            )}
+          />
+          <Route
+            path="/AddPhoto"
+            render={({ history }) => (
+              <AddPhoto {...this.props} onHistory={history} />
+            )}
+          />
+          <Route
+            exact
+            path="/single/:id"
+            render={(params) => (
+              <Single
+                loading={this.state.loading}
+                {...this.props}
+                {...params}
+              />
+            )}
+          />
+        </div>
+        <Footer />
       </div>
     );
   }

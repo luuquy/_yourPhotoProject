@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Photo from "./Photo";
-import Comments from "./Comments";
+import Photo from "../Photo/Photo";
+import Comments from "../Comments/Comments";
+import "./Single.css";
+
 class Single extends Component {
   render() {
     const { match, posts } = this.props;
@@ -9,7 +11,7 @@ class Single extends Component {
     const comments = this.props.comments[match.params.id] || [];
     const index = this.props.posts.findIndex((post) => post.id === id);
     if (this.props.loading === true) {
-      return <div className="loader"> ...loading </div>;
+      return <div className="loader"> ... loading </div>;
     } else if (post) {
       return (
         <div className="single-photo">
@@ -22,7 +24,7 @@ class Single extends Component {
         </div>
       );
     } else {
-      return <h1> ...no post found </h1>;
+      return <h1> ...</h1>;
     }
   }
 }

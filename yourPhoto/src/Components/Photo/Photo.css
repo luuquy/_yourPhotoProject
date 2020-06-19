@@ -1,0 +1,46 @@
+.photo {
+  object-fit: content;
+  height: 300px;
+  width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+}
+
+.figure {
+  flex-basis: calc(33.333% - 4rem);
+  border: 1px solid #d3d3d3;
+  padding: 2rem;
+  flex-grow: 1;
+  margin: 0 2rem 2rem 2rem;
+}
+.button-container-remove {
+  cursor: pointer;
+}
+.comment-count {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+.count-cmt {
+  text-decoration: none;
+}
+
+.count-cmt:hover {
+  text-decoration: none;
+}
+.btn-comment:hover {
+  border-color: rgb(9, 223, 212);
+}
+.fa-comments {
+  margin-right: 10px;
+  color: rgb(9, 223, 212);
+}
+
+.button-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

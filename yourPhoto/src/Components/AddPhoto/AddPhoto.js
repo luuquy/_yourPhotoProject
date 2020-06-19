@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./AddPhoto.css";
 
 class AddPhoto extends Component {
   constructor(props) {
@@ -25,8 +26,8 @@ class AddPhoto extends Component {
       <div>
         <div className="form">
           <form onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="Link" name="link" />
-            <input type="text" placeholder="Description" name="description" />
+            <input type="text" placeholder="Paste link here" name="link" />
+            <input type="text" placeholder="Status" name="description" />
             <button> Post </button>
           </form>
         </div>

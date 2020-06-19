@@ -1,0 +1,43 @@
+.header {
+  --height: 80px;
+  height: var(--height);
+  width: 100%;
+  /* background-color: rgba(35, 121, 233, 0.795); */
+
+  font-size: 4rem;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.header__brand {
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 3.5rem;
+  line-height: var(--height);
+  color: rgb(250, 11, 238);
+  font-family: "Rock Salt", cursive;
+}
+
+.header__brand:hover {
+  text-decoration: none;
+  color: rgb(9, 223, 212);
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  line-height: var(--height);
+}
+.header__nav-list-item {
+  margin-right: 2rem;
+  color: rgb(9, 223, 212);
+  font-family: "Segoe ui light";
+}
+
+.header__nav-list-item:hover {
+  text-decoration: none;
+  color: rgb(250, 11, 238);
+}
